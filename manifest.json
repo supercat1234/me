@@ -1,0 +1,12 @@
+{
+ "name": "MemeGen by SuperCat",
+ "short_name": "SuperCatMeme",
+ "start_url": "https://meme-nu.vercel.app",
+ "description": "",
+ "display": "standalone",
+ "orientation": "any",
+ "theme_color": "#ffff00",
+ "background_color": "#ffffff",
+ "icons": [],
+ "scope": "https://meme-nu.vercel.app"
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image:src" content="">
+  <meta property="og:image" content="">
+  <meta name="twitter:title" content="Home">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo5.png" type="image/x-icon">
+  <meta name="description" content="">
+
+  <link rel="manifest" href="./manifest.json"> <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+  
+  
+  <title>MemeGen by SuperCat</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="features15 cid-tkjZqMGKTb" id="features16-0">
+
+    
+
+    
+    
+    <div class="container-fluid">
+        <div class="content-wrapper">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg">
+                    <div class="text-wrapper">
+                        <h6 class="card-title mbr-fonts-style display-2"><strong>Мемы генератор</strong></h6>
+                        <section>
+                                <select id="meme">
+                                    <option value="1990s-First-World-Problems">1990s First World Problems</option>
+                                    <option value="1st-World-Canadian-Problems">1st World Canadian Problems</option>
+                                    <option value="2nd-Term-Obama">2nd Term Obama</option>
+                                    <option value="Turkey">Turkey</option>        
+                                    <option value="Tuxedo-Winnie-The-Pooh">Tuxedo Winnie The Pooh</option>
+                                    <option value="Two-Buttons">Two Buttons</option>
+                                    <option value="UNO-Draw-25-Cards">UNO Draw 25 Cards</option>
+                                    <option value="USA-Lifter">USA Lifter</option>
+                                    <option value="Ugly-Twins">Ugly Twins</option>
+                                    <option value="Uncle-Sam">Uncle Sam</option>
+                                    <option value="Unhappy-Baby">Unhappy Baby</option>
+                                    <option value="Unhelpful-High-School-Teacher">Unhelpful High School Teacher</option>
+                                    <option value="Welcome-To-The-Internets">Welcome To The Internets</option>       
+                                    <option value="Well-That-Escalated-Quickly">Well That Escalated Quickly</option>
+                                    <option value="What-Do-We-Want">What Do We Want</option>
+                                    <option value="What-Do-We-Want-3">What Do We Want 3</option>
+                                    <option value="Thumbs-Up-Emoji">Thumbs Up Emoji</option>
+                                    <option value="Time-To-Fap">Time To Fap</option>
+                                    <option value="Today-Was-A-Good-Day">Today Was A Good Day</option>
+                                    <option value="Tom-Hardy-">Tom Hardy </option>
+                                    <option value="Tomas-Rosicky">Tomas Rosicky</option>
+                                    <option value="The-Probelm-Is">The Probelm Is</option>
+                                </select>
+                                <input type="text" id="top-text" placeholder="Top text" value="">
+                                <input type="text" id="bottom-text" placeholder="Bottom text" value="">
+                        <div class="mbr-section-btn mt-3"><button class="btn btn-warning display-4" id="submitBtn">Создать&nbsp;</button></div>
+                            <script type="text/javascript">
+                                var api = 'https://apimeme.com/meme?';
+                                $('#submitBtn').on({
+                                    'click': function(){
+                                        zvezda();
+                                    }
+                                });
+                                $('#top-text').on({
+                                    'input': function(){
+                                        zvezda();
+                                    }
+                                });
+                                $('#bottom-text').on({
+                                    'input': function(){
+                                        zvezda();
+                                    }
+                                });
+                                $('#meme').on({
+                                    'change': function(){
+                                        zvezda();
+                                    }
+                                });
+                                function zvezda() {
+                                    var meme = $('#meme').val();
+                                    var top = $('#top-text').val();
+                                    var bottom = $('#bottom-text').val();
+                                    var result = api + 'meme=' + meme + '&top=' + top + '&bottom=' + bottom;
+                                    $('#memeImg').attr('src', result);
+                                }
+                            </script>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="image-wrapper">
+                        <img src="assets/images/boba-woman-looking-for-clues-on-the-notice-board.png" alt="изображение " id="memeImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer7 cid-tkk4SNsU0S" once="footers" id="footer7-1">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                    © Copyright 2022. Алексеева Вероника. Все права защищены&nbsp;</p>
+            </div>
+        </div>
+    </div>
+</section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+</body>
+</html>
